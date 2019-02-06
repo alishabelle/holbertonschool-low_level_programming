@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
-* Main - the main function
-* Prints out a string 
+*main - The main function
+*
 * Return: The return value is zero
 */
 
-int main()
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle\n");
 	return (0);
