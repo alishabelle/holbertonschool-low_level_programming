@@ -5,10 +5,8 @@
 *Return: The return value is zero
 **/
 
-main()
+int main(void)
 {
-	int i;
-
 	clrscr();
 	printf("Size of a char : %2d bytes\n", sizeof(char));
 	printf("Size of an int : %2d bytes\n", sizeof(int));
@@ -17,5 +15,4 @@ main()
 	printf("Size of a float : %2d bytes\n", sizeof(float));
 	getch();
 	return (0);
-
 }
