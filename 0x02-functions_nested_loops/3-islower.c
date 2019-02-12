@@ -1,14 +1,13 @@
 #include "holberton.h"
 /**
-*main - The main function
-*Return: The return value is zero
+*_islower - checks for lowercase chars
+*@c:  parameter entered in function
+*Return: The return value is a number
 **/
 
 int _islower(int c)
 {
-	int ch;
-	
-	if (ch >= 'a' && ch <= 'z')
+	if (c >= 'a' && c <= 'z')
 		return (1);
 	else
 		return (0);
