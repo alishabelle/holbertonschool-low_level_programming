@@ -1,8 +1,9 @@
 #include "holberton.h"
+
 /**
- * main - The _putchar function
- * Return: The return is 0
- **/
+*main - The _putchar function
+*Return: The return is 0
+**/
 
 int main(void)
 {
