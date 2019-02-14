@@ -1,6 +1,8 @@
 #include "holberton.h"
 /**
-*main - The main function
+*add - The main function
+*@x: parameter
+*@y: parameter
 *Return: The return value is zero
 **/
 
