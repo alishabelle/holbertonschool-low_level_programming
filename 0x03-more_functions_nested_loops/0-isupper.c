@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
-*_isupper - The main function
-*@c: parameter
-*Return: The return value is zero
+* _isupper - The main function
+* @c: parameter
+* Return: The return value is zero
 **/
 int _isupper(int c)
 {
