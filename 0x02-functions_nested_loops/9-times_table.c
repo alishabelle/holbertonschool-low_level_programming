@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
 *times_table - The main function
 *Return: The return value is zero
@@ -9,9 +10,11 @@ void times_table(void)
 
 	for (z = 0; z <= 9; z++)
 	{
-		_putchar('0');
-		for (i = 0; i <= 9; i++)
+		_putchar ('0');
 		{
+			for (i = 1; i <= 9; i++)
+		{
+			x = z * i;
 			if (x <= 9)
 			{
 				_putchar(',');
@@ -29,5 +32,6 @@ void times_table(void)
 		}
 	x++;
 	_putchar('\n');
-	}
+		}
+}
 }
