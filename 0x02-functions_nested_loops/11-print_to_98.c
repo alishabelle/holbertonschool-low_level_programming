@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
-*main - The main function
+*print_to_98 - The main function
+*@n: parameter
 *Return: The return value is zero
 **/
 void print_to_98(int n)
