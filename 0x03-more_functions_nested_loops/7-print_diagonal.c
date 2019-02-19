@@ -1,9 +1,9 @@
 #include "holberton.h"
-/*
+/**
 * print_diagonal - main function
 *@n: parameter
 * Return - the return value are spaces
-*/
+**/
 void print_diagonal(int n)
 {
 	int x, y;
