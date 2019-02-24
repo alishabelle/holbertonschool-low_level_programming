@@ -11,11 +11,11 @@ int main(void)
 	{
 		if (x % 3 == 0 && x % 5 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else if (x % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else if (x % 3 == 0)
 		{
@@ -25,6 +25,9 @@ int main(void)
 		{
 			printf("%d ", x);
 		}
+		if (x < 100)
+			putchar(' ');
+
 	}
 	putchar('\n');
 	return (0);
