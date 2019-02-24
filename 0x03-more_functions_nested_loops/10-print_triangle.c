@@ -1,6 +1,8 @@
 #include "holberton.h"
 /**
- *
+ *print_triangle - the main function
+ *@size: parameter
+ * Return: the return is void
  */
 void print_triangle(int size)
 {
@@ -18,7 +20,7 @@ void print_triangle(int size)
 				_putchar(' ');
 			for (x = 0; x <= space; x++)
 				_putchar('#');
-      			_putchar('\n');
+			_putchar('\n');
 		}
 	}
 
