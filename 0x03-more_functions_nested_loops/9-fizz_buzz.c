@@ -19,11 +19,11 @@ int main(void)
 		}
 		else if (x % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
 		else
 		{
-			printf("%d ", x);
+			printf("%d", x);
 		}
 		if (x < 100)
 			putchar(' ');
