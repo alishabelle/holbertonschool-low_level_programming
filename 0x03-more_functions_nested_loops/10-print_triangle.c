@@ -4,6 +4,7 @@
  *@size: parameter
  * Return: the return is void
  */
+
 void print_triangle(int size)
 {
 	int space, x;
