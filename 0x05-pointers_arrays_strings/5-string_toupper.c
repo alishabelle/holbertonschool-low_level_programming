@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- *
- *
+ *string_toupper
+ *@a: parameter
  */
 char *string_toupper(char *a)
 {
