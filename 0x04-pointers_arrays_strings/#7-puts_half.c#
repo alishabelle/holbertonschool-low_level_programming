@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include "holberton.h"
+/**
+ *puts_half - the main function
+ *@str: parameter
+ * return - the return is void
+ */
+void puts_half(char *str)
+{
+	int x, n;
+
+	for (x = 0; str[x] != 0; x++)
+		;
+	x--;
+	printf("%d", x);
+
+	{
+		_putchar(str[n]);
+	}
+	_putchar('\n');
+}
