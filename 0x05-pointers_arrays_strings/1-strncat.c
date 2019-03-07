@@ -1,7 +1,10 @@
 #include "holberton.h"
 /**
- *
- *
+ *_strncat - the main function
+ *@dest: parameter
+ *@src: parameter
+ *@n: parameter
+ * Return: the return value is char
  */
 char *_strncat(char *dest, char *src, int n)
 {
