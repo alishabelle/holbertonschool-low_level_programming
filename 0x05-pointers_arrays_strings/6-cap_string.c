@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
  *cap_string - the main function
- *@*: parameter
+ *@s: parameter
+ * Return: the return is a char
  */
 char *cap_string(char *s)
 {
@@ -10,7 +11,7 @@ char *cap_string(char *s)
 
 	for (x = 0; s[x] != '\0'; x++)
 	{
-		if(s[0] >= 97 && s[0] <= 122)
+		if (s[0] >= 97 && s[0] <= 122)
 		{
 			s[0] = s[0] - 32;
 		}
