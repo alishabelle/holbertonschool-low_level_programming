@@ -8,8 +8,8 @@ char *rot13(char *r)
 {
 	int x, y;
 
-	char arr[] = "abcdefghijklmnopqrstuvABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char arr2[] = "nopqrstuvwkyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char arr[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char arr2[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	for (x = 0; r[x] != '\0'; x++)
 		for (y = 0; arr[y] != '\0'; y++)
@@ -19,6 +19,6 @@ char *rot13(char *r)
 				r[x] = arr2[y];
 				break;
 			}
-       		}
+		}
 	return (r);
 }
