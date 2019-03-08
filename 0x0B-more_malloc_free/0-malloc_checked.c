@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include "holberton.h"
 /**
- *
+ *malloc_checked
+ *@b: parameter
+ * Return: the return is void
  */
 void *malloc_checked(unsigned int b)
 {
