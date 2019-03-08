@@ -7,8 +7,8 @@
 char *rot13(char *r)
 {
 	int x, y;
-	char arr[] = "ABCDEFGHIJKLM";
-	char arr2[] = "NOPQRSTUVWXYZ";
+	char arr[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char arr2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (x = 0; r[x] != '\0'; x++)
 		for (y = 0; arr[y] != '\0'; y++)
