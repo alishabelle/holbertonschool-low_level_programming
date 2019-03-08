@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "holberton.h"
 /**
- *malloc_checked
+ *malloc_checked - the main function
  *@b: parameter
  * Return: the return is void
  */
