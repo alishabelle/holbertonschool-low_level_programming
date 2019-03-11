@@ -4,16 +4,16 @@
  *_strchr - the main function
  *@s: parameter
  *@c: parameter
- * Reutrn - the return is a char
+ * Return: the return is a char
  */
 char *_strchr(char *s, char c)
 {
-	int len;
+	int x;
 
-	for (len = 0; s[len] != '\0'; len++)
+	for (x = 0; s[x] != '\0' && s[x] != c; x++)
 		;
-	if (*s == c)
-		return (s);
+	if (s[x] == c)
+		return (s + x);
 	else
-		return NULL;
+		return (NULL);
 }
