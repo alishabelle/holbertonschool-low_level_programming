@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- *_strstr
- *
- *
+ *_strstr - the function
+ *@haystack: parameter
+ *@needle: parameter
+ * Return: the return is a char
  */
 char *_strstr(char *haystack, char *needle)
 {
@@ -11,7 +12,7 @@ char *_strstr(char *haystack, char *needle)
 
 	for (; *haystack; haystack++, a++)
 	{
-		for (; *b != '\0' && *a == *b; a++, b++ )
+		for (; *b != '\0' && *a == *b; a++, b++)
 			;
 		a = haystack;
 		if (*b == '\0')
