@@ -31,8 +31,6 @@ void funct_f(va_list print)
 
 void print_all(const char * const format, ...)
 {
-
-
 	struct funct arr[] = {
 		{'c', funct_c},
 		{'i', funct_i},
@@ -43,7 +41,7 @@ void print_all(const char * const format, ...)
 
        	va_list print;
 	int x = 0, y;
-	char *space = " ", *sep = ",";
+	char *space = " ", *sep = ", ";
 
 	va_start(print, format);
 
