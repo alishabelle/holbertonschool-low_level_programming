@@ -41,7 +41,7 @@ void print_all(const char * const format, ...)
 
        	va_list print;
 	int x = 0, y;
-	char *space = " ", *sep = ", ";
+	char *space = "", *sep = ", ";
 
 	va_start(print, format);
 
