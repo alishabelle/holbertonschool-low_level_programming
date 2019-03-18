@@ -10,11 +10,11 @@
 
 void funct_c(va_list print)
 {
-	printf("%c ", va_arg(print, int));
+	printf("%c", va_arg(print, int));
 }
 void funct_i(va_list print)
 {
-	printf("%d ", va_arg(print, int));
+	printf("%d", va_arg(print, int));
 }
 void funct_s(va_list print)
 {
@@ -24,11 +24,11 @@ void funct_s(va_list print)
 			printf("(nil)");
 			return;
 		}
-	printf("%s ", str);
+	printf("%s", str);
 }
 void funct_f(va_list print)
 {
-	printf("%f ", va_arg(print, double));
+	printf("%f", va_arg(print, double));
 }
 
 void print_all(const char * const format, ...)
