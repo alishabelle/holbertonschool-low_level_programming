@@ -1,13 +1,11 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include "variadic_functions.h"
-
 /**
  *
  *
  *
  */
-
 void funct_c(va_list print)
 {
 	printf("%c", va_arg(print, int));
