@@ -51,14 +51,12 @@ void funct_f(va_list print)
 /**
  *print_all - the function
  *@format: parameter
+ *
  * Return: void
  */
 void print_all(const char * const format, ...)
 {
-/**
- * struct funct - the function
- */
-	struct funct arr[] = {
+	jank arr[] = {
 		{'c', funct_c},
 		{'i', funct_i},
 		{'s', funct_s},
