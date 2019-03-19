@@ -51,11 +51,13 @@ void funct_f(va_list print)
 /**
  *print_all - the function
  *@format: parameter
- *struct funct arr - structure function array
  * Return: void
  */
 void print_all(const char * const format, ...)
 {
+/**
+ * struct funct - the function
+ */
 	struct funct arr[] = {
 		{'c', funct_c},
 		{'i', funct_i},
@@ -63,7 +65,6 @@ void print_all(const char * const format, ...)
 		{'f', funct_f},
 		{'\0', NULL}
 	};
-
 	va_list print;
 	int x = 0, y;
 	char *space = "", *sep = ", ";
