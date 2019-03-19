@@ -31,11 +31,11 @@ void funct_s(va_list print)
 	char *str = va_arg(print, char *);
 
 	if (str == NULL)
-		{
-			printf("(nil)");
-			return;
-		}
-	printf("%s", str);
+	{
+		printf("(nil)");
+		return;
+	}
+printf("%s", str);
 }
 
 /**
@@ -51,6 +51,7 @@ void funct_f(va_list print)
 /**
  *print_all - the function
  *@format: parameter
+ *struct funct arr - structure function array
  * Return: void
  */
 void print_all(const char * const format, ...)
