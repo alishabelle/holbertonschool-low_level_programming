@@ -3,14 +3,15 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- *
- *
+ *print_list - prints singly link list
+ *@h: parameter
+ * Return: returns an int
  */
 size_t print_list(const list_t *h)
 {
 	const list_t *save;
 	int count = 0;
-	
+
 	save = h;
 
 	while (save != NULL)
@@ -19,14 +20,13 @@ size_t print_list(const list_t *h)
 		{
 			printf("[0] (nil)\n");
 		}
-     		else
+		else
 		{
 			printf("[%d] ", save->len);
 			printf("%s\n", save->str);
-		}			
+		}
 		count++;
 		save = save->next;
-       	}
+	}
 	return (count);
-
 }
