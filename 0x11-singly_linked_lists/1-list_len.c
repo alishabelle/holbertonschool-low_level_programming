@@ -3,30 +3,21 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- *
- *
+ *list_len - function returns number of elements
+ *@h: paramter
+ * Return: the return is an int
  */
-size_t print_list(const list_t *h)
+size_t list_len(const list_t *h)
 {
 	const list_t *save;
 	int count = 0;
-	
+
 	save = h;
 
 	while (save != NULL)
 	{
-		if (save->str == NULL)
-		{
-			printf("[0] (nil)\n");
-		}
-     		else
-		{
-			printf("[%d]", save->len);
-			printf("%s\n", save->str);
-		}			
 		count++;
 		save = save->next;
-       	}
+	}
 	return (count);
-
 }
