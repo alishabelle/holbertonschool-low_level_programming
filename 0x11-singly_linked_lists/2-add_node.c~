@@ -1,0 +1,14 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
+/**
+ *add_node - function adds a node
+ *@head: parameter
+ *@str: parameter
+ * Return: the return is a type
+ */
+list_t *add_node(list_t **head, const char *str)
+{
+
+}
