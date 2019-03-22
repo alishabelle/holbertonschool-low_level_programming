@@ -20,7 +20,7 @@ list_t *add_node(list_t **head, const char *str)
 	new->str = strdup(str);
 
 	if (new->str != '\0')
-	{	
+	{
 		for (x = 0; new->str[x] != '\0'; x++)
 		{
 			;
