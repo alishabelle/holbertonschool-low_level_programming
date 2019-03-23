@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include "holberton.h"
+/**
+ *print_chessboard - the function
+ *@a: parameter
+ * Return: the reutrn is void
+ */
+void print_chessboard(char (*a)[8])
+{
+
+}
