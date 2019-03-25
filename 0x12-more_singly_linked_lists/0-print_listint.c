@@ -1,7 +1,8 @@
 #include "lists.h"
 /**
- *
- *
+ *print_listint - the main function
+ *@h: parameter
+ * Return - the return is a size_t type
  */
 size_t print_listint(const listint_t *h)
 {
