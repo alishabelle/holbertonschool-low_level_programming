@@ -3,13 +3,15 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- *
- *
+ *add_node_end - function to add a node at the end of a link list
+ *@head: parameter
+ *@str: parameter
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
 	 unsigned int x;
 	 list_t *new;
+	 list_t *old;
 
 	 new = malloc(sizeof(list_t));
 
@@ -25,7 +27,20 @@ list_t *add_node_end(list_t **head, const char *str)
 		 }
 	 }
 	 new->len = x;
-	 new->next = NULL;
-	 *head = new;
-	 return (new);
- }
+	 if (*head == NULL)
+	 {
+		 new->next = *head;
+		 *head = new;
+		 return (new);
+	 }
+	 else
+	 {
+		 old = *head;
+		 while (old->next != NULL)
+		 {
+			 old = old->next;
+		 }
+		 old->next = new;
+		 return (new);
+	 }
+}
