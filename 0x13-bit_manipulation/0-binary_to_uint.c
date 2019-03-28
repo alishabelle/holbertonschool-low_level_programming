@@ -11,7 +11,7 @@ unsigned int binary_to_uint(const char *b)
 
 	while (*b != '\0')
 	{
-       		chan = 2 * chan + (*b++ - '0');
-       	}
+		chan = 2 * chan + (*b++ - '0');
+	}
 	return chan;
 }
