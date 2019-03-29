@@ -12,9 +12,9 @@ int main(void)
 	{
 		if (n % 5 == 0 || n % 3 == 0)
 		{
-			sum += m;
+			sum += n;
 		}
-		printf(sum);
 	}
+	printf("%d\n", sum);
 	return (0);
 }
