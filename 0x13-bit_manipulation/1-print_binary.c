@@ -6,7 +6,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int temp, check = 0; 
+	unsigned long int temp, check = 0;
 	unsigned long int mask = 1;
 	int index;
 
