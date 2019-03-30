@@ -3,7 +3,7 @@
  *set_bit - function to set bits
  *@n: parameter
  *@index: parameter
- * Return
+ * Return: the return is an int
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
