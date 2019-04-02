@@ -2,7 +2,7 @@
 /**
 *main - advanced
 *Return: The return value is zero
-**/
+*/
 
 int main(void)
 {
@@ -17,15 +17,14 @@ int main(void)
 			{
 				putchar(x);
 				putchar(z);
-			}
-			if (x == 8 && z == 9)
-			{
-				putchar('\n');
-				putchar(',');
-				putchar(' ');
+				if (x < '8')
+				{
+					putchar(',');
+					putchar(' ');
+			       	}
 			}
 		}
 	}
-}
-return (0);
+	putchar('\n');
+	return (0);
 }
