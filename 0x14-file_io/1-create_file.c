@@ -7,6 +7,7 @@
 #include "holberton.h"
 /**
  *create_file - the main function to create a file
+ * @filename: parameter
  * @text_content: a parameter
  * Return: the return is an int
  */
@@ -23,7 +24,7 @@ int create_file(const char *filename, char *text_content)
 
 	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
-       	if (fd == -1)
+	if (fd == -1)
 		return (-1);
 	for (x = 0; text_content[x] != '\0'; x++)
 		;
