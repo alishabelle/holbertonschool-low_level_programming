@@ -24,13 +24,13 @@ int create_file(const char *filename, char *text_content)
 
 	if (fd == -1)
 		return (-1);
-	for (x = 0; text_content[x] != '\0'; x++)
-		;
-	if (text_content == NULL)
+	if (text_content != NULL)
 	{
-		numwrite = write(fd, text_content, x);
-	}	
-	if (numwrite == -1)
+		for (x = 0; text_content[x] != '\0'; x++)
+			;
+		numwrite = write(fd, text_content, x);	
+	}
+      	if (numwrite == -1)
 		return (-1);
 	close(fd);
 	return (1);
