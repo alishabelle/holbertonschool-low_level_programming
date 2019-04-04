@@ -17,7 +17,7 @@ void print_number(int n)
 	print_unumber((unsigned int) n);
 }
 /**
- *print_unumber - made up function 
+ *print_unumber - made up function
  *@n: parameter
  * Return: the return is void
  */
