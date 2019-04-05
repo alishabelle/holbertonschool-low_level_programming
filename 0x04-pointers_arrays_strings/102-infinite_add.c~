@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include "holberton.h"
+/**
+ * infinite_add - the function to add chars
+ *@n1: parameter
+ *@n2: parameter
+ *@r: parameter
+ *@size_r: parameter
+ * Return: the return is a char
+ */
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
+{
+	int x1, x2, xr, keep = 0, carry = 0;
+	int x;
+
+	for (x1 = 0; n1[x1]; x1++)
+		;
+	for (x2 = 0; n2[x2]; x2++)
+		;
+	keep = xr;
+	keep = xr = x1 > x2 ? x1 : x2;
+
+	if (xr > size_r + 1)
+		return (NULL);
+	r[keep] = '\0';
+	for (xr--, x1--, x2--; x1 > -1 && x2 > -1; xr--, x1--, x2--)
+	{
+		x = n1[x1] + n2[x2] + carry - '0' * 2;
+		r[x2] = x % 10 + '0';
+		carry = x / 10;
+	}
+	if (x2 > -1)
+	{
+		x1 = x2;
+		n1 = n2;
+	}
+	for (; x1 > -1; x1--, xr--)
+	{
+		x = n1[x1] - '0' + carry;
+		r[xr] = x % 10 + '0';
+		carry = x / 10;
+	}
+	if (carry == 1)
+	{
+		if (keep > size_r + 2)
+			return (NULL);
+		for (keep++; keep > 0; keep--)
+			r[keep] = r[keep - 1];
+		r[keep] = '1';
+	}
+	return (r);
+}
