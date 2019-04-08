@@ -15,7 +15,7 @@ int _sqrt_recursion(int n)
  * _sqrt - recursive function to find sqrt of number
  *@a: parameter
  *@b: parameter
- * Return; returns an int
+ * Return: returns an int
  */
 int _sqrt(int a, int b)
 {
