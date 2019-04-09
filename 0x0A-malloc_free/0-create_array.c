@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "holberton.h"
 /**
- *create_array - function creates an array of chars 
+ *create_array - function creates an array of chars
  *@size: parameter
  *@c: parameter
  * Return: returns a char
@@ -17,9 +17,9 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-		   for (x = 0; x < size; x++)
-		   {
-			   a[x] = c;
-		   }
-		   return (a);
+	for (x = 0; x < size; x++)
+	{
+		a[x] = c;
+	}
+	return (a);
 }
