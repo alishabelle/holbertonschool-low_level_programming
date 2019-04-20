@@ -3,7 +3,7 @@
  *str_concat - concatenates two strings
  *@s1: input string
  *@s2: second input string
- * Reuturn: reutrns a pointer to a char
+ * Return: reutrns a pointer to a char
  */
 char *str_concat(char *s1, char *s2)
 {
