@@ -1,4 +1,4 @@
-#include "holbeton.h"
+#include "holberton.h"
 
 /**
  * strtow - splits a string with words separated by spaces to an array of words
@@ -36,7 +36,7 @@ char **strtow(char *str)
 			for (x = y; str[x] && str[x] != ' '; x++, cc++)
 			{
 				if (x == y)
-					wc++;
+					wordc++;
 			}
 			y = x;
 		}
@@ -57,7 +57,7 @@ char **strtow(char *str)
 			for (x = y; str[x] && str[x] != ' '; x++, cc++)
 			{
 				if (x == y)
-					wc++;
+					wordc++;
 			}
 			y = x;
 			array[wordc][cc] = str[x];
