@@ -3,8 +3,9 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- *
- *
+ *dlistint_len - print elements of double linked list
+ *@h: parameter
+ * Return: returns an int
  */
 size_t dlistint_len(const dlistint_t *h)
 {
