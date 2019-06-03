@@ -8,10 +8,9 @@
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
-	unsigned long int hasher = 0;
-	int x;
+	unsigned long int indexer = 0;
 
-	for (x = 0; key != NULL && key[x] != '\0'; x++)
-		hasher = (hasher + key[x]) % size;
-	return (hasher);
+	indexer = (hash_djb2(key) % size);
+ 
+	return (indexer);
 }
