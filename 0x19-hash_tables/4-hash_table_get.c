@@ -18,7 +18,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	new_jawn = ht->array[indexer];
 
-	while(new_jawn)
+	while (new_jawn)
 	{
 		if (strcmp(new_jawn->key, key) == 0)
 			return (new_jawn->value);
