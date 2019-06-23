@@ -4,7 +4,7 @@
  * bubble_sort - starts from beginning compares adjacent pairs
  *@array: parameter
  *@size: parameter
- * Return: returns sorted array
+ * Return: returns void
  */
 void bubble_sort(int *array, size_t size)
 {
