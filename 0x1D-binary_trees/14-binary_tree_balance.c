@@ -2,7 +2,7 @@
 
 /**
  * binary_tree_balance - function measures the balance factor
- *@tree: pointer to root node
+ * @tree: pointer to root node
  * Return: returns the balance factor
  */
 int binary_tree_balance(const binary_tree_t *tree)
@@ -19,7 +19,7 @@ int binary_tree_balance(const binary_tree_t *tree)
 	if (tree->left == NULL)
 		heightLeft = -1;
 	if (tree->right == NULL)
-		heightRgiht = -1;
+		heightRight = -1;
 	heightLeft += binary_tree_height(tree->left);
 	heightRight += binary_tree_height(tree->right);
 	balance = (heightLeft - heightRight);
