@@ -1,0 +1,1 @@
+Bit manipulations converting from Hex, base16, binary, and base10
