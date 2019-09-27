@@ -1,9 +1,0 @@
-#include "holberton.h"
-/**
- * is_palindrome - returns 1 if string is palindrome
- *@s: parameter
- * Return: the return is an int
- */
-int is_palindrome(char *s)
-{
-}
